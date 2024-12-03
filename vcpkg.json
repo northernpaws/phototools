@@ -1,0 +1,23 @@
+{
+  "name" : "phototools",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "6a3dd0874f153f8b375ec26210ea6d41dee3bb26",
+  "dependencies" : [ {
+    "name" : "libraw",
+    "version>=" : "0.21.1",
+    "features" : [ ],
+    "$comment" : "    find_package(libraw CONFIG REQUIRED)\n\n    # non-thread-safe\n\n    target_link_libraries(main PRIVATE libraw::raw)\n\n    # thread-safe\n\n    target_link_libraries(main PRIVATE libraw::raw_r)\n"
+  }, {
+    "name" : "opencv",
+    "version>=" : "4.8.0#1"
+  }, {
+    "name" : "libjpeg-turbo",
+    "version>=" : "3.0.2"
+  }, {
+    "name" : "libpng",
+    "version>=" : "1.6.43"
+  }, {
+    "name" : "lcms",
+    "version>=" : "2.14"
+  } ]
+}
